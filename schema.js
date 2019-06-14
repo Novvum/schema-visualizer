@@ -1,6 +1,7 @@
 const { makeExecutableSchema } = require("graphql-tools");
+const gql = require("graphql-tag");
 
-const typeDefs = `
+const typeDefs = gql`
 type Query{
 	Partner(id:ID) : Partner
 }
